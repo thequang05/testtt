@@ -25,7 +25,6 @@ mixup: 0.1
 copy_paste: 0.0
 data: /kaggle/working/data.yaml
 
-# --- CÁC THAM SỐ QUAN TRỌNG ĐỂ SỬA LỖI ---
-amp: false      # Tắt kiểm tra mixed precision (Sửa lỗi cv2 resize)
-verify: true    # Bật chế độ kiểm tra lại data
-workers: 0      
+# --- CẤU HÌNH FIX LỖI (Đã xóa verify) ---
+amp: false      # Tắt check GPU để tránh lỗi cv2
+workers: 0      # Chạy đơn luồng để fix lỗi DataLoader
