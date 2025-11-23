@@ -9,7 +9,7 @@ lr0: 0.01
 lrf: 0.01
 weight_decay: 0.0005
 momentum: 0.937
-amp: true
+amp: false
 warmup_epochs: 3.0
 close_mosaic: 10
 hsv_h: 0.015
