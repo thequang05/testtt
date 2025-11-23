@@ -2,14 +2,12 @@ epochs: 100
 batch: 16
 imgsz: 640
 device: 0
-workers: 8
 patience: 30
 optimizer: auto
 lr0: 0.01
 lrf: 0.01
 weight_decay: 0.0005
 momentum: 0.937
-amp: false
 warmup_epochs: 3.0
 close_mosaic: 10
 hsv_h: 0.015
@@ -26,5 +24,8 @@ mosaic: 1.0
 mixup: 0.1
 copy_paste: 0.0
 data: /kaggle/working/data.yaml
-verify: true
-workers: 0
+
+# --- CÁC THAM SỐ QUAN TRỌNG ĐỂ SỬA LỖI ---
+amp: false      # Tắt kiểm tra mixed precision (Sửa lỗi cv2 resize)
+verify: true    # Bật chế độ kiểm tra lại data
+workers: 0      
