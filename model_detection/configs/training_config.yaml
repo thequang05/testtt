@@ -26,3 +26,4 @@ mosaic: 1.0
 mixup: 0.1
 copy_paste: 0.0
 data: /kaggle/working/data.yaml
+verify: true
