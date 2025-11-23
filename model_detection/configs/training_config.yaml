@@ -27,4 +27,3 @@ data: /kaggle/working/data.yaml
 
 # --- CẤU HÌNH FIX LỖI (Đã xóa verify) ---
 amp: false      # Tắt check GPU để tránh lỗi cv2
-workers: 0      # Chạy đơn luồng để fix lỗi DataLoader
