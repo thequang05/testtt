@@ -1,29 +1,7 @@
-epochs: 100
-batch: 16
-imgsz: 640
+data: /kaggle/working/data.yaml  
+epochs: 100                      
+batch: 16                        
+imgsz: 640                       
 device: 0
-patience: 30
-optimizer: auto
-lr0: 0.01
-lrf: 0.01
-weight_decay: 0.0005
-momentum: 0.937
-warmup_epochs: 3.0
-close_mosaic: 10
-hsv_h: 0.015
-hsv_s: 0.7
-hsv_v: 0.4
-degrees: 0.0
-translate: 0.1
-scale: 0.5
-shear: 0.0
-perspective: 0.0
-flipud: 0.0
-fliplr: 0.5
-mosaic: 1.0
-mixup: 0.1
-copy_paste: 0.0
-data: /kaggle/working/data.yaml
-
-# --- CẤU HÌNH FIX LỖI (Đã xóa verify) ---
-amp: false      # Tắt check GPU để tránh lỗi cv2
+patience: 30                    
+amp: false
